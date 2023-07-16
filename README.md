@@ -4,6 +4,22 @@ Easily migrate and update email addresses associated with previous commits.
 
 This repository contains a shell script that changes the email addresses in the commit history of a Git repository. The script allows you to update both the user and author email addresses.
 
+## create a back up
+
+Open a terminal or command prompt and navigate to the repository directory where you want to change the author email.
+
+Create a backup of your repository in case something goes wrong:
+
+```bash
+git clone --mirror <repository_url> backup_repo
+```
+
+Change into the cloned backup repository directory:
+
+```bash
+cd backup_repo
+```
+
 ## usage
 
 1. Save the above script in a file (e.g., `change_email.sh`)
